@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.container-main {
+    background-color: #ffffff;
+}
+
+textarea {
+    border: 2px dashed #eeeeee;
+    resize: none;
+   
+}
+
