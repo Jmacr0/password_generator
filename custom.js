@@ -10,6 +10,8 @@ while(true){
     var lengthPassInput = prompt("How many characters must be included?(8-128)");
     if(lengthPassInput === null){
         break;
+    } else if(lengthPassInput === ""){
+        continue;
     }
     else if(parseInt(lengthPassInput) > 128 || parseInt(lengthPassInput) < 8) {
         continue;
