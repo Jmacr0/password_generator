@@ -6,14 +6,22 @@ function generate(){
 
 alert("Please let me know your password requirements.");
 
-var lengthPass = parseInt(prompt("How many characters must be included?(8-128)"));
+while(true){
+    var lengthPassInput = prompt("How many characters must be included?(8-128)");
+    if(lengthPassInput === null){
+        break;
+    }
+    else if(parseInt(lengthPassInput) > 128 || parseInt(lengthPassInput) < 8) {
+        continue;
+    } else { 
+
+
+var lengthPass = parseInt(lengthPassInput); 
 var specialChar = prompt("Include special characters?[y/n]");
 var numChar = prompt("Include numbers?[y/n]");
 var upperChar = prompt("Include uppercase?[y/n]");
 var lowerChar = prompt("Include lowercase?[y/n]");
 
-
-//////////////////// Need to find a way to check lengthPass is within range ///////////////////
 
 
 
@@ -63,6 +71,10 @@ for(var i = 0; i < lengthPass; i++){
 var finalPassword = randomPassword.join("");
 
 document.getElementById("randomPasswordDisplay").innerHTML = finalPassword;
+
+    
+    } break;
+}
 
 };
 
