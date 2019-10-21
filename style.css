@@ -2,6 +2,8 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
+
+
 .container-main {
     background-color: #ffffff;
 }
@@ -12,3 +14,46 @@ textarea {
    
 }
 
+
+
+*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (max-width : 640px) {
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
