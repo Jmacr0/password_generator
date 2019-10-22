@@ -15,9 +15,6 @@ textarea {
 }
 
 
-
-*==========  Non-Mobile First Method  ==========*/
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -29,7 +26,7 @@ textarea {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 780px) {
 
     h1 {
         font-size: 2em;
@@ -37,7 +34,7 @@ textarea {
 
 }
 
-@media only screen and (max-width : 640px) {
+@media only screen and (max-width : 680px) {
 
     h1 {
         font-size: 1.6em;
@@ -49,8 +46,14 @@ textarea {
 }
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 600px) {
+    h1 {
+        font-size: 1.4em;
+    }
 
+    h2 {
+        font-size: 1.3em;
+    }
 }
 
 /* Custom, iPhone Retina */ 
