@@ -12,8 +12,9 @@ while(true){
         break;
     } else if(lengthPassInput === ""){
         continue;
-    }
-    else if(parseInt(lengthPassInput) > 128 || parseInt(lengthPassInput) < 8) {
+    } else if(isNaN(parseInt(lengthPassInput))){
+        continue;
+    } else if(parseInt(lengthPassInput) > 128 || parseInt(lengthPassInput) < 8) {
         continue;
     } else { 
 
